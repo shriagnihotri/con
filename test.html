@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head><title> hello</title>>
+<body> 
+    <div class="banner">
+        <div class="navbar">
+            <img src="menu.png" class="logo">
+            <ul>
+                <li><a href='a'>HOME</a></li>
+                <li><a href='a'>MOLDINGS</a></li>
+                <li><a href='a'>CONTAINERS</a></li>
+                <li><a href='a'>OPTIONS</a></li>
+                <li><a href='a'>HELP</a></li>
+            </ul>
+        </div><h2>Shri Containers and Moldings</h2>
+        <div class="content">
+            <h1>SHRI CONTAINER AND MOLDINGS</h1>
+            <p> hi <br>this is a detail about the things of website</p>
+            <div><button type="button"><span></span>button1</button>
+                <button type="button"><span></span>button2</button>
+            </div>
+        </div>
+        
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <scripts type="text/javascript" src="vanilla-tilt.js"></scripts>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+        max:25,
+        speed:400,
+        glare:true,
+        
+     });
+    </script>
+    <footer><center><h3> <a href="https://goo.gl/maps/vYcZuL3oAeb3Rp1T8">Shri Containers and Moldings, C-62 ,Chakari-2 Indus area, Kanpur, Uttar Pradesh 208007, India</a><br><p> PROFOUNDER:MRS. LAXMI AGNIHOTRI</p> </h3></center></H1></footer>
+
+</body>
+</html>
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+.banner{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding:35px 0;
+    display:flex;
+    align-items:center;
+    justify-content:  space-between;
+}
+.logo{
+    width:120px;
+    cursor:pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:#fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width:0;
+    background:#009688;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width:100%;
+    position:absolute;
+    top :50%;
+    transform:tranlateY(-50);
+    text-align:center;
+    color:#fff;
+}
+.content h1{
+    font-size:70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 29px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align:center;
+    margin:20 px 10px;
+    border-radius: 25px;
+    font-weight:bold;
+    border:2px solid #009688;
+    background:none;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    
+}
+span{
+    background:#009688;
+    height:100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width:100%;
+}
+button:hover{
+    border: red; color: #255784;
+    background:#2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,0 0 80px #2196f3;
+    
+    transition-delay: .2s;
+}
+footer{
+    background:#0b0b0c; 
+    color: beige; 
+}
+a{ 
+    background:#17c42565; 
+    color:bisque;
+}
+h2{
+    color:bisque;
+}
